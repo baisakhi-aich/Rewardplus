@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import playstore from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
-import microsoft from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
+import playstore from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
+import microsoft from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
+
 import rewardlogo from "../../assets/Logo/logo.png";
 
 const Home = () => {
@@ -65,9 +66,14 @@ const Home = () => {
           </p>
 
           <div className="flex mt-6 space-x-4">
-            <img src={playstore} alt="App Store" className="w-28" />
-            <img src={microsoft} alt="Google Play" className="w-28" />
-          </div>
+  <a href="https://play.google.com/store/apps/details?id=com.wtm.rewardsplus.rewards.more&hl=en" target="_blank" rel="noopener noreferrer">
+    <img src={playstore} alt="Google Play" className="w-28" />
+  </a>
+  <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener noreferrer">
+    <img src={microsoft} alt="Microsoft Store" className="w-28" />
+  </a>
+</div>
+
         </div>
 
         <div className="md:w-1/3 mt-8 md:mt-0 flex justify-center">

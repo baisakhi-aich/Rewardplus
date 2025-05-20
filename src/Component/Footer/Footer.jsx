@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import footermicrosoft from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
-import footerplaystore from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
+import footerplaystore from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
+import footermicrosoft from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
 import footerlogo from "../../assets/Logo/logo.png";
-import { ChevronUp, ChevronDown, Facebook, Twitter, Linkedin } from "lucide-react";
+import { ChevronUp, ChevronDown, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -43,6 +43,10 @@ const Footer = () => {
               <li><a href="#" className="hover:underline">Enterprise</a></li>
               <li><a href="#" className="hover:underline">Contact</a></li>
             </ul>
+                <div className="mt-4">
+              <img src={footerlogo} alt="Logo" className="w-20" />
+            </div>
+      
           </div>
 
           {/* Resources */}
@@ -74,14 +78,14 @@ const Footer = () => {
             <div className="flex space-x-4 mb-4">
               <a href="#" className="hover:text-blue-300"><Facebook size={18} /></a>
               <a href="#" className="hover:text-blue-300"><Twitter size={18} /></a>
-              <a href="#" className="hover:text-blue-300"><Linkedin size={18} /></a>
+              <a href="https://www.youtube.com/watch?v=i6eAEWgwdtA" className="hover:text-blue-300"><Linkedin size={18} /></a>
+               <a href="https://www.youtube.com/watch?v=i6eAEWgwdtA" className="hover:text-blue-300"><Youtube size={18} /></a>
             </div>
             <div className="flex flex-wrap items-center gap-3">
-              <img src={footerplaystore} alt="Play Store" className="w-24 h-auto rounded bg-white p-1" />
-              <img src={footermicrosoft} alt="Microsoft Store" className="w-24 h-auto rounded bg-white p-1" />
-            </div>
-            <div className="mt-4">
-              <img src={footerlogo} alt="Logo" className="w-20" />
+               <a href="https://play.google.com/store/apps/details?id=com.wtm.rewardsplus.rewards.more&hl=en" target="_blank" rel="noopener noreferrer">
+              <img src={footerplaystore} alt="Play Store" className="w-24 h-auto rounded  p-1" />
+              </a>
+              <img src={footermicrosoft} alt="Microsoft Store" className="w-24 h-auto rounded p-1" />
             </div>
           </div>
         </div>
@@ -95,7 +99,7 @@ const Footer = () => {
           <a href="#" className="hover:underline">User Terms</a>
           <a href="#" className="hover:underline">Merchant Terms</a>
         </div>
-      </div>
+        </div>
     </footer>
   );
 };
