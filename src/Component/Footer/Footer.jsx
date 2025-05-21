@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import footerplaystore from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
 import footermicrosoft from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
 import footerlogo from "../../assets/Logo/logo.png";
@@ -95,9 +96,13 @@ const Footer = () => {
       <div className="border-t border-white/30 mt-10 pt-4 text-center text-sm space-y-2">
         <p>© 2025. All Rights Reserved By WT Makers</p>
         <div className="space-x-4">
+          <Link to="/privacy">
           <a href="#" className="hover:underline">Privacy Policy</a>
-          <a href="#" className="hover:underline">User Terms</a>
-          <a href="#" className="hover:underline">Merchant Terms</a>
+          </Link>
+          <Link to="/user"><a href="#" className="hover:underline">User Terms</a></Link>
+          <Link to="/contact">
+          <a href="#" className="hover:underline">Contact</a>
+          </Link>
         </div>
         </div>
     </footer>

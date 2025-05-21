@@ -1,5 +1,8 @@
 import React from 'react'
+// import { Link } from 'react-router-dom';
+
 import { Typewriter } from 'react-simple-typewriter'
+import { Link } from 'react-router-dom';
 
 import how1 from "../../assets/Work/how4.png"
 import how2 from "../../assets/Work/how5.png"
@@ -49,9 +52,12 @@ const Steps = () => {
             <div className="bg-[#111859] hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 p-6 rounded-xl text-center shadow-md hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer">
               <img src={how1} alt="Install App" className="mx-auto w-16 h-16 mb-4" />
               <h3 className="text-lg font-semibold mb-2 text-white">Install Beta App</h3>
-              <button className="mt-2 px-6 py-2 bg-gradient-to-r from-blue-100 to-purple-500 text-blue-800 font-medium rounded-full shadow-md transition duration-300 hover:scale-105">
-                Download →
-              </button>
+              <Link to="/download">
+  <button className="mt-2 px-6 py-2 bg-gradient-to-r from-blue-100 to-purple-500 text-blue-800 font-medium rounded-full shadow-md transition duration-300 hover:scale-105">
+    Download →
+  </button>
+</Link>
+
             </div>
 
             {/* Box 2 */}
