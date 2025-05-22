@@ -26,14 +26,26 @@ const Header = () => {
           <a href="#Walk-Through" className="hover:underline">Walk-Through</a>
           <a href="#About" className="hover:underline">About</a>
           <a href="#pricing" className="hover:underline">Pricing</a>
+          <a   
+    href="https://merchants.rewardsplus.io/lms/auth/login "
+    target="_blank"
+    rel="noopener noreferrer"
+  className="hover:underline">merchant login</a>
         </nav>
 
         {/* CTA Button */}
-        <div className="hidden md:flex items-center space-x-4">
-          <button className="bg-white text-[rgb(74,89,223)] text-sm font-semibold px-4 py-2 rounded-full hover:bg-blue-100 transition">
-            Get Apps
-          </button>
-        </div>
+  <div className="hidden md:flex items-center space-x-4">
+  <a
+    href="https://apps.apple.com/in/app/rewardsplus-rewards-more/id6737422630"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="bg-white text-[rgb(74,89,223)] text-sm font-semibold px-4 py-2 rounded-full hover:bg-pink-500 transition">
+      Get Apps
+    </button>
+  </a>
+</div>
+
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
