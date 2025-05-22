@@ -7,15 +7,14 @@ import { ArrowLeftCircle } from 'lucide-react';
 const Contact = () => {
   return (
     <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-6 py-10 sm:px-10 sm:py-12"
+      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-fixed px-6 py-10 sm:px-10 sm:py-12"
       style={{ backgroundImage: `url('../../footer.jpeg')` }} // Update path as needed
     >
-      {/* Contact Us heading with gradient */}
+      {/* Contact Us heading with gradient and typewriter */}
       <h2
         className="text-5xl sm:text-7xl md:text-8xl font-bold mb-10 text-center"
         style={{
-         backgroundImage: 'linear-gradient(to right, #6b46c1, #9f7aea)', /* purple to pink */
-
+          backgroundImage: 'linear-gradient(to right, #6b46c1, #9f7aea)', // purple to pink gradient
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           backgroundClip: 'text',
@@ -29,24 +28,24 @@ const Contact = () => {
           typeSpeed={50}
           deleteSpeed={0}
           delaySpeed={1000}
+          cursor
+          cursorStyle="|"
         />
       </h2>
 
-      {/* Two boxes container */}
-      <div className="flex flex-col md:flex-row gap-3 w-full max-w-6xl backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-10">
+      {/* Two boxes container with reduced gap */}
+      <div className="flex flex-col md:flex-row gap-2 w-full max-w-6xl backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-10">
         
         {/* Left Side */}
         <div className="bg-purple-700 text-white p-6 rounded-xl flex flex-col justify-between space-y-6 md:w-1/2">
           <div>
-            <h4 className="text-sm uppercase tracking-wide mb-1">Contact Us </h4>
+            <h4 className="text-sm uppercase tracking-wide mb-1">Contact Us</h4>
             <h3 className="text-xl md:text-2xl font-bold leading-snug mb-4">
               Whether you're having a support question, application issue or an application query, please get in touch.
             </h3>
-            
-              <a href="mailto:contacts@esbnyc.com" className="underline hover:text-purple-300">
-                support@rewardsplus.io
-              </a>
-            
+            <a href="mailto:contacts@esbnyc.com" className="underline hover:text-purple-300">
+              support@rewardsplus.io
+            </a>
           </div>
 
           <div>
@@ -58,7 +57,7 @@ const Contact = () => {
               <a href="#" aria-label="LinkedIn" className="hover:text-purple-400"><FaLinkedinIn /></a>
               <a href="#" aria-label="Pinterest" className="hover:text-purple-400"><FaPinterestP /></a>
             </div>
-            <p className="text-xs">&copy; 2025<a href="#" className="underline hover:text-purple-400">Privacy policy</a></p>
+            <p className="text-xs">&copy; 2025 <a href="#" className="underline hover:text-purple-400">Privacy policy</a></p>
           </div>
         </div>
 
@@ -115,4 +114,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
