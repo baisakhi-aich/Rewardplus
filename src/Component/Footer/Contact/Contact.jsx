@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center px-6 py-10 sm:px-10 sm:py-12"
-      style={{ backgroundImage: `url('../../images (1).jpeg')` }} // Update path as needed
+      style={{ backgroundImage: `url('../../footer.jpeg')` }} // Update path as needed
     >
       {/* Contact Us heading with gradient */}
       <h2
@@ -33,23 +33,20 @@ const Contact = () => {
       </h2>
 
       {/* Two boxes container */}
-      <div className="flex flex-col md:flex-row gap-8 w-full max-w-6xl backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-10">
+      <div className="flex flex-col md:flex-row gap-3 w-full max-w-6xl backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-10">
         
         {/* Left Side */}
-        <div className="bg-purple-800 text-white p-6 rounded-xl flex flex-col justify-between space-y-6 md:w-1/2">
+        <div className="bg-purple-700 text-white p-6 rounded-xl flex flex-col justify-between space-y-6 md:w-1/2">
           <div>
             <h4 className="text-sm uppercase tracking-wide mb-1">Contact Us </h4>
             <h3 className="text-xl md:text-2xl font-bold leading-snug mb-4">
               Whether you're having a support question, application issue or an application query, please get in touch.
             </h3>
-            <address className="not-italic text-sm leading-relaxed space-y-1">
-              <div>3045 10 Sunrise Avenue, 123-456-7890</div>
-              <div>Mon – Fri: 9:00 am – 8:00 pm</div>
-              <div>Sat – Sun: 9:00 am – 10 pm</div>
+            
               <a href="mailto:contacts@esbnyc.com" className="underline hover:text-purple-300">
                 support@rewardsplus.io
               </a>
-            </address>
+            
           </div>
 
           <div>
@@ -61,7 +58,7 @@ const Contact = () => {
               <a href="#" aria-label="LinkedIn" className="hover:text-purple-400"><FaLinkedinIn /></a>
               <a href="#" aria-label="Pinterest" className="hover:text-purple-400"><FaPinterestP /></a>
             </div>
-            <p className="text-xs">&copy; 2022 <a href="#" className="underline hover:text-purple-400">Privacy policy</a></p>
+            <p className="text-xs">&copy; 2025<a href="#" className="underline hover:text-purple-400">Privacy policy</a></p>
           </div>
         </div>
 
