@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import playstore from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
-import microsoft from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
+import playstore from "../../assets/App/play (3).png";
+import microsoft from "../../assets/App/app.png";
 
 import rewardlogo from "../../assets/Logo/logo.png";
 
@@ -52,7 +52,7 @@ const Home = () => {
   }, [stats]);
 
   return (
-    <div id="home" className="bg-gradient-to-r from-blue-200 to-sky-900 px-6 py-10 max-w-full mx-auto">
+    <div id="home" className="bg-gradient-to-r from-pink-500 to-sky-700 px-6 py-10 max-w-full mx-auto">
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="md:w-1/2">
@@ -65,14 +65,14 @@ const Home = () => {
             Get your 500 token welcome bonus today.
           </p>
 
-          <div className="flex mt-6 space-x-4">
+          {/* <div className="flex mt-6 space-x-4">
   <a href="https://play.google.com/store/apps/details?id=com.wtm.rewardsplus.rewards.more&hl=en" target="_blank" rel="noopener noreferrer">
     <img src={playstore} alt="Google Play" className="w-28" />
   </a>
-  <a href="https://www.microsoft.com/store/apps" target="_blank" rel="noopener noreferrer">
+  <a href="https://apps.apple.com/in/app/rewardsplus-rewards-more/id6737422630" target="_blank" rel="noopener noreferrer">
     <img src={microsoft} alt="Microsoft Store" className="w-28" />
   </a>
-</div>
+</div> */}
 
         </div>
 

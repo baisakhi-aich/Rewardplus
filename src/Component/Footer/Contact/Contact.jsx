@@ -1,116 +1,111 @@
-import React from 'react';
-import { Typewriter } from 'react-simple-typewriter';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPinterestP } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import { ArrowLeftCircle } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div
-      className="min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-fixed px-6 py-10 sm:px-10 sm:py-12"
-      style={{ backgroundImage: `url('../../footer.jpeg')` }} // Update path as needed
-    >
-      {/* Contact Us heading with gradient and typewriter */}
-      <h2
-        className="text-5xl sm:text-7xl md:text-8xl font-bold mb-10 text-center"
-        style={{
-          backgroundImage: 'linear-gradient(to right, #6b46c1, #9f7aea)', // purple to pink gradient
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-          display: 'inline-block',
-        }}
-      >
-        <Typewriter
-          words={['Contact Rewardplus']}
-          loop={false}
-          typeSpeed={50}
-          deleteSpeed={0}
-          delaySpeed={1000}
-          cursor
-          cursorStyle="|"
-        />
-      </h2>
-
-      {/* Two boxes container with reduced gap */}
-      <div className="flex flex-col md:flex-row gap-2 w-full max-w-6xl backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-10">
-        
-        {/* Left Side */}
-        <div className="bg-purple-700 text-white p-6 rounded-xl flex flex-col justify-between space-y-6 md:w-1/2">
-          <div>
-            <h4 className="text-sm uppercase tracking-wide mb-1">Contact Us</h4>
-            <h3 className="text-xl md:text-2xl font-bold leading-snug mb-4">
-              Whether you're having a support question, application issue or an application query, please get in touch.
-            </h3>
-            <a href="mailto:contacts@esbnyc.com" className="underline hover:text-purple-300">
-              support@rewardsplus.io
-            </a>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-3">Follow us</h3>
-            <div className="flex gap-5 text-2xl mb-6">
-              <a href="#" aria-label="Facebook" className="hover:text-purple-400"><FaFacebookF /></a>
-              <a href="#" aria-label="Twitter" className="hover:text-purple-400"><FaTwitter /></a>
-              <a href="#" aria-label="Instagram" className="hover:text-purple-400"><FaInstagram /></a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-purple-400"><FaLinkedinIn /></a>
-              <a href="#" aria-label="Pinterest" className="hover:text-purple-400"><FaPinterestP /></a>
-            </div>
-            <p className="text-xs">&copy; 2025 <a href="#" className="underline hover:text-purple-400">Privacy policy</a></p>
-          </div>
-        </div>
-
-        {/* Right Side */}
-        <div className="md:w-1/2 bg-white rounded-xl p-6 shadow-md">
-          <form className="space-y-6">
-            <input
-              type="text"
-              placeholder="Enter your Name"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Enter a valid email address"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
-              required
-            />
-            <input
-              type="tel"
-              placeholder="Phone number"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
-            />
-            <textarea
-              rows="4"
-              placeholder="Enter your message"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
-              required
-            />
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                className="bg-purple-600 text-white font-semibold hover:bg-pink-700 transition rounded-full w-16 h-16 flex items-center justify-center text-sm"
-                style={{ padding: 0 }}
-              >
-                SUBMIT
-              </button>
-            </div>
-          </form>
+    <div className="min-h-screen bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 px-4 sm:px-6 md:px-8 py-12 sm:py-16">
+      {/* Top Title and Back Arrow */}
+      <div className="text-center mb-10 sm:mb-12">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white animate-pulse bg-clip-text text-transparent bg-gradient-to-r from-white via-pink-100 to-blue-200">
+          Contact Us
+        </h1>
+        <div className="mt-4">
+          <Link
+            to="/"
+            className="inline-flex items-center text-white hover:text-gray-200 text-base sm:text-lg"
+          >
+            <FaArrowLeft className="mr-2" />
+            Back to Home
+          </Link>
         </div>
       </div>
 
-      {/* Back Button */}
-      <Link
-        to="/"
-        className="fixed bottom-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-purple-700 hover:bg-purple-600 transition duration-300 shadow-lg z-50"
-        title="Back to Home"
-        aria-label="Back to Home"
-      >
-        <ArrowLeftCircle className="w-6 h-6 text-white" />
-      </Link>
+      {/* Main Content */}
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center bg-white/80 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        {/* Left Side - Contact Info */}
+        <div className="mb-6 md:mb-0">
+          <h2 className="text-sm text-gray-700 mb-2">Contact</h2>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+            How Can We Help You?
+          </h1>
+          <div className="space-y-3 text-base sm:text-lg text-gray-800">
+            <p>📍 GautingerStr. 24a, 82152, Krailling</p>
+            <p>
+              🔗{" "}
+              <a
+                href="https://www.linkedin.com/company/rewardsplus"
+                className="text-blue-800 underline font-semibold"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                linkedin.com/company/rewardsplus
+              </a>
+            </p>
+            <p>📧 support@rewardsplus.io</p>
+          </div>
+        </div>
+
+        {/* Right Side - Form */}
+        <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg w-full">
+          <form className="space-y-4 text-gray-900">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="First Name"
+                className="p-2 rounded border w-full"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                className="p-2 rounded border w-full"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Organization"
+              className="w-full p-2 rounded border"
+            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Job Title"
+                className="p-2 rounded border w-full"
+              />
+              <input
+                type="email"
+                placeholder="Email"
+                className="p-2 rounded border w-full"
+              />
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Country"
+                className="p-2 rounded border w-full"
+              />
+              <input
+                type="text"
+                placeholder="Telephone Number"
+                className="p-2 rounded border w-full"
+              />
+            </div>
+            <textarea
+              placeholder="How can we help you?"
+              rows="4"
+              className="w-full p-2 rounded border"
+            />
+            <button
+              type="submit"
+              className="w-3/12 bg-gradient-to-r from-pink-500 to-blue-500 text-white font-semibold px-6 py-3 rounded hover:opacity-90"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;

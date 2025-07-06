@@ -2,7 +2,7 @@ import React from 'react';
 
 const Vdopage = () => {
   return (
-    <div className="py-12 bg-gradient-to-r from-blue-200 to-sky-900 text-center px-4 md:px-8">
+    <div className="py-12 bg-gradient-to-r from-pink-500 to-sky-900 text-center px-4 md:px-8">
       <h2 className="text-3xl md:text-4xl font-bold mb-4">What is Rewardplus+ ?</h2>
       
       <p className="text-white text-sm font-light md:text-lg max-w-3xl mx-auto mb-8">

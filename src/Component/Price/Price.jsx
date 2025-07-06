@@ -2,7 +2,7 @@ import React from "react";
 
 const Pricing = () => {
   return (
-    <div id="pricing" className="min-h-screen bg-gradient-to-r from-blue-200 to-sky-900 text-white py-16 px-4">
+    <div id="pricing" className="min-h-screen bg-gradient-to-r from-pink-500 to-sky-900 text-white py-16 px-4">
       <h2 className="text-4xl font-bold text-center mb-2">Choose Your Plan</h2>
       <p className="text-center text-lg mb-12">Unlock endless possibilities with RewardsPlus</p>
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import footerplaystore from "../../assets/App/1728646283_Mobile app store badge-CakwQpZx.svg";
-import footermicrosoft from "../../assets/App/1728646283_Mobile app store badge-1-DQ_exAEs.svg";
+import footerplaystore from "../../assets/App/play (3).png";
+import footermicrosoft from "../../assets/App/app.png";
 import footerlogo from "../../assets/Logo/logo.png";
 import { ChevronUp, ChevronDown, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 
@@ -86,7 +86,10 @@ const Footer = () => {
                <a href="https://play.google.com/store/apps/details?id=com.wtm.rewardsplus.rewards.more&hl=en" target="_blank" rel="noopener noreferrer">
               <img src={footerplaystore} alt="Play Store" className="w-24 h-auto rounded  p-1" />
               </a>
+                             <a href="https://apps.apple.com/in/app/rewardsplus-rewards-more/id6737422630" target="_blank" rel="noopener noreferrer">
+
               <img src={footermicrosoft} alt="Microsoft Store" className="w-24 h-auto rounded p-1" />
+              </a>
             </div>
           </div>
         </div>

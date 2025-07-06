@@ -10,6 +10,8 @@ import Download from './Component/Download/Download';
 import PrivacyPolicy from './Component/PrivacyPolicy/PrivacyPolicy';
 import Contact from './Component/Footer/Contact/Contact';
 import Terms from './Component/Footer/Terms/Terms';
+import Whyreward from './Component/Whyreward/Whyreward';
+import AboutUs from './Component/About/About';
 
 const AppContent = () => {
   const location = useLocation();
@@ -28,6 +30,7 @@ const AppContent = () => {
           element={
             <>
               <Home />
+              <Whyreward/>
               <Steps />
               <Vdopage />
               <Price />
@@ -38,6 +41,7 @@ const AppContent = () => {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/user" element={<Terms />} />
+        <Route path="/about" element={<AboutUs/>} />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>

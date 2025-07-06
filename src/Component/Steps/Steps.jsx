@@ -12,7 +12,7 @@ import how4 from "../../assets/Work/how7.png"
 const Steps = () => {
   return (
     <div>
-      <section className="bg-gradient-to-r from-blue-200 to-sky-900 text-white py-16 px-4 sm:px-6">
+      <section className="bg-gradient-to-r from-pink-500 to-sky-900 text-white py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
 
           {/* Heading Section */}
